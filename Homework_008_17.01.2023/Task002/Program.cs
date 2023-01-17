@@ -6,7 +6,6 @@
 // 5 2 6 7
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
-Console.WriteLine("Для выполнения операции введите равное количество строк и столбцов");
 Console.WriteLine("Введите количество строк");
 int rows = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов");
@@ -22,7 +21,7 @@ void FillArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
         for (int j = 0; j < array.GetLength(1); j++)
-            array[i, j] = new Random().Next(0, 10);
+            array[i, j] = new Random().Next(-9, 10);
 }
 void PrintArray(int[,] array)
 {
